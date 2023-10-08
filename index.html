@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by karan</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="/totonext/style.css">
+  <link rel="stylesheet" href="icons.css">
+  <script src="/totonext/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Task Manager</h1>
+    <button id="add-task-btn" class="add-task-btn"><i class="fas fa-plus"></i> Add Task</button>
+  </header>
+
+  <div id="task-columns" class="task-columns">
+    <div id="todo-column" class="task-column">
+      <h2>Todo</h2>
+      <div id="todo-list" class="task-list"></div>
+    </div>
+    <div id="inprogress-column" class="task-column">
+      <h2>In Progress</h2>
+      <div id="inprogress-list" class="task-list"></div>
+    </div>
+    <div id="done-column" class="task-column">
+      <h2>Done</h2>
+      <div id="done-list" class="task-list"></div>
+    </div>
+    <div id="delayed-column" class="task-column delayed-column">
+      <h2>Delayed</h2>
+      <div id="delayed-list" class="task-list"></div>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Add Task</h2>
+      <form id="task-form" class="task-form">
+        <div class="form-group">
+          <label for="task-title">Title</label>
+          <input type="text" id="task-title" placeholder="Enter title" required>
+        </div>
+        <div class="form-group">
+          <label for="task-description">Description</label>
+          <textarea id="task-description" placeholder="Enter description" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="task-category">Category</label>
+          <select id="task-category" required>
+            <option value="personal">Personal</option>
+            <option value="work">Work</option>
+            <option value="shopping">Shopping</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="task-due-date">Due Date</label>
+          <input type="date" id="task-due-date" required>
+        </div>
+        <div class="form-group">
+          <label for="task-time">Time to Finish</label>
+          <input type="time" id="task-time" required>
+        </div>
+        <div class="form-group">
+          <label for="task-assignee">Assignee</label>
+          <input type="text" id="task-assignee" placeholder="Enter assignee">
+        </div>
+        <div class="form-group">
+          <label for="task-attachment">Attachment</label>
+          <input type="file" id="task-attachment">
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="add-task-btn"><i class="fas fa-plus"></i> Add Task</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

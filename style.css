@@ -1,0 +1,233 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #1976d2;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .add-task-btn {
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-task-btn:hover {
+    background-color: #00796b;
+  }
+  
+  .task-columns {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+  }
+  
+  .task-column {
+    flex: 1 0 300px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-column h2 {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .task-list {
+    min-height: 200px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .task {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    cursor: move;
+  }
+  
+  .task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-header h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .task-details {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .task-category {
+    display: inline-block;
+    padding: 2px 6px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  
+  .task-category.personal {
+    background-color: #e91e63;
+  }
+  
+  .task-category.work {
+    background-color: #4caf50;
+  }
+  
+  .task-category.shopping {
+    background-color: #ff9800;
+  }
+  
+  .task-category.others {
+    background-color: #9e9e9e;
+  }
+  
+  .task-assignee {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+  }
+  
+  .task-due-date {
+    display: inline-block;
+    color: #333;
+  }
+  
+  .task-time-to-finish {
+    display: inline-block;
+    color: #333;
+  }
+  
+  .task-actions {
+    margin-top: 10px;
+  }
+  
+  .edit-task-btn,
+  .delete-task-btn {
+    padding: 5px;
+    background-color: transparent;
+    color: #999;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .edit-task-btn:hover,
+  .delete-task-btn:hover {
+    color: #333;
+  }
+  
+  .edit-task-btn {
+    margin-right: 10px;
+  }
+  
+  .delayed-column {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    width: 500px;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .form-actions {
+    text-align: right;
+  }
+  
+  .modal .add-task-btn {
+    margin-top: 10px;
+  }
+  
+  /* icons.css */
+  
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
