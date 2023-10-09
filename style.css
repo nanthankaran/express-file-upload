@@ -209,7 +209,7 @@ body {
   input[type="text"],
   textarea,
   select {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     font-size: 14px;
     border-radius: 4px;
