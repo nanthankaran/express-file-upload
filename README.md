@@ -1,7 +1,4 @@
 ![Screenshot of the project](https://github.com/nanthankaran/html-task-management/blob/master/Screenshot%202023-10-08%20152310.png)
-
-![Screenshot of the project](https://github.com/nanthankaran/html-task-management/blob/master/Screenshot%202023-10-08%20152342.png)
-
 To-Do List Project
 
 This project is a simple to-do list application built using HTML, CSS, and JavaScript. It allows users to add, edit, and delete tasks, as well as assign tasks to different categories and set due dates and times.
@@ -13,6 +10,8 @@ Assign tasks to different categories (personal, work, shopping, others)
 Set due dates and times
 Add attachments to tasks
 View a list of all upcoming tasks
+![Screenshot of the project](https://github.com/nanthankaran/html-task-management/blob/master/Screenshot%202023-10-08%20152342.png)
+
 To use the project:
 
 Clone the repository to your local machine.
